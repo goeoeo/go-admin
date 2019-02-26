@@ -32,8 +32,13 @@ http://blog.csdn.net/lhtzbj12/article/details/78847482
 1. 安装golang环境（ 略）
 
 2. 安装本系统
+```bash
+git clone https://github.com/phpdi/go_admin.git
 ```
-go get github.com/lhtzbj12/sdrms
+3.进入项目目录 执行 
+* 注释:这个程序批量修改文件的包名为当前项目目录的包名
+```bash
+ ./rename -path=$(pwd) -oldProjectName=go_admin
 ```
 3. 将根目录下的sdrms.sql导入mysql
 
