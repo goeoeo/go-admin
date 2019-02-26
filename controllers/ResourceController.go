@@ -29,10 +29,7 @@ func (c *ResourceController) Index() {
 	c.checkAuthor()
 	//将页面左边菜单的某项激活
 	c.Data["activeSidebarUrl"] = c.URLFor(c.controllerName + "." + c.actionName)
-	c.setTpl()
-	c.LayoutSections = make(map[string]string)
-	c.LayoutSections["headcssjs"] = "resource/index_headcssjs.html"
-	c.LayoutSections["footerjs"] = "resource/index_footerjs.html"
+	c.display()
 	//页面里按钮权限控制
 	c.Data["canEdit"] = c.checkActionAuthor("ResourceController", "Edit")
 	c.Data["canDelete"] = c.checkActionAuthor("ResourceController", "Delete")
@@ -126,7 +123,7 @@ func (c *ResourceController) Edit() {
 		c.Data["parent"] = 0
 	}
 
-	c.setTpl("resource/edit.html", "shared/layout_pullbox.html")
+	c.display("resource/edit.html", "shared/layout_pullbox.html")
 	c.LayoutSections = make(map[string]string)
 	c.LayoutSections["footerjs"] = "resource/edit_footerjs.html"
 }
@@ -207,7 +204,7 @@ func (c *ResourceController) Select() {
 		}
 	}
 	c.Data["selectedIds"] = strings.Join(selectedIds, ",")
-	c.setTpl("resource/select.html", "shared/layout_pullbox.html")
+	c.display("resource/select.html", "shared/layout_pullbox.html")
 	c.LayoutSections = make(map[string]string)
 	c.LayoutSections["headcssjs"] = "resource/select_headcssjs.html"
 	c.LayoutSections["footerjs"] = "resource/select_footerjs.html"

@@ -15,21 +15,18 @@ type HomeController struct {
 func (c *HomeController) Index() {
 	//判断是否登录
 	c.checkLogin()
-	c.setTpl()
+	c.display()
 }
 func (c *HomeController) Page404() {
-	c.setTpl()
+	c.display()
 }
 func (c *HomeController) Error() {
 	c.Data["error"] = c.GetString(":error")
-	c.setTpl("home/error.html", "shared/layout_pullbox.html")
+	c.display("home/error.html", "shared/layout_pullbox.html")
 }
 func (c *HomeController) Login() {
 
-	c.LayoutSections = make(map[string]string)
-	c.LayoutSections["headcssjs"] = "home/login_headcssjs.html"
-	c.LayoutSections["footerjs"] = "home/login_footerjs.html"
-	c.setTpl("home/login.html", "shared/layout_base.html")
+	c.display("home/login.html", "shared/layout_base.html")
 }
 func (c *HomeController) DoLogin() {
 	username := strings.TrimSpace(c.GetString("UserName"))

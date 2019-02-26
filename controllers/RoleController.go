@@ -35,10 +35,8 @@ func (c *RoleController) Index() {
 	c.Data["showMoreQuery"] = false
 	//将页面左边菜单的某项激活
 	c.Data["activeSidebarUrl"] = c.URLFor(c.controllerName + "." + c.actionName)
-	c.setTpl()
+	c.display()
 	c.LayoutSections = make(map[string]string)
-	c.LayoutSections["headcssjs"] = "role/index_headcssjs.html"
-	c.LayoutSections["footerjs"] = "role/index_footerjs.html"
 	//页面里按钮权限控制
 	c.Data["canEdit"] = c.checkActionAuthor("RoleController", "Edit")
 	c.Data["canDelete"] = c.checkActionAuthor("RoleController", "Delete")
@@ -84,7 +82,7 @@ func (c *RoleController) Edit() {
 		}
 	}
 	c.Data["m"] = m
-	c.setTpl("role/edit.html", "shared/layout_pullbox.html")
+	c.display("role/edit.html", "shared/layout_pullbox.html")
 	c.LayoutSections = make(map[string]string)
 	c.LayoutSections["footerjs"] = "role/edit_footerjs.html"
 }

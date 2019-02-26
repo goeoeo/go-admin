@@ -11,6 +11,8 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> 
     {{template "shared/globalcss.html"}} 
     {{.headcssjs}}
+    {{template "shared/globaljs.html"}}
+
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -19,7 +21,7 @@
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="index2.html" class="logo">
+            <a href="/" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>R</b>MS</span>
                 <!-- logo for regular state and mobile devices -->
@@ -191,7 +193,7 @@
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="content-wrapper" >
             {{.LayoutContent}}
         </div>
         <!-- /.content-wrapper -->
@@ -208,7 +210,6 @@
         {{ template "shared/control-sidebar.html" }}
     </div>
     <!-- ./wrapper -->
-    {{template "shared/globaljs.html"}}
     <script>
         $(function () {
            //页面左侧菜单初始化

@@ -33,10 +33,8 @@ func (c *BackendUserController) Index() {
 	//将页面左边菜单的某项激活
 	c.Data["activeSidebarUrl"] = c.URLFor(c.controllerName + "." + c.actionName)
 	//页面模板设置
-	c.setTpl()
-	c.LayoutSections = make(map[string]string)
-	c.LayoutSections["headcssjs"] = "backenduser/index_headcssjs.html"
-	c.LayoutSections["footerjs"] = "backenduser/index_footerjs.html"
+	c.display()
+
 	//页面里按钮权限控制
 	c.Data["canEdit"] = c.checkActionAuthor("BackendUserController", "Edit")
 	c.Data["canDelete"] = c.checkActionAuthor("BackendUserController", "Delete")
@@ -82,9 +80,7 @@ func (c *BackendUserController) Edit() {
 		roleIds = append(roleIds, strconv.Itoa(item.Role.Id))
 	}
 	c.Data["roles"] = strings.Join(roleIds, ",")
-	c.setTpl("backenduser/edit.html", "shared/layout_pullbox.html")
-	c.LayoutSections = make(map[string]string)
-	c.LayoutSections["footerjs"] = "backenduser/edit_footerjs.html"
+	c.display("backenduser/edit.html", "shared/layout_pullbox.html")
 }
 func (c *BackendUserController) Save() {
 	m := models.BackendUser{}

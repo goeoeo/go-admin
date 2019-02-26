@@ -168,5 +168,66 @@ var rms = function () {
 
 }();
 jQuery(document).ready(function () {
-    rms.init()
+    rms.init();
+
+    //主页面
+    var body=$('body');
+
+    //点击a标签
+    body.on('click', 'a', function () {
+
+        var url = $(this).attr('href');
+        var _pjax=2;
+
+        if (url === 'javascript:;' || url==='javascript:void(0)') {
+            return false;
+        }
+
+        if(typeof ($(this).attr('_pajx')) !="undefined"){
+            _pjax=$(this).attr('_pajx');
+        }
+
+        redirect(url,_pjax);
+
+        //阻止a标签跳转
+        return false;
+    });
+
+    /**
+     * ajax跳转
+     * @param url
+     * @param _pajx
+     */
+    function redirect(url,_pajx) {
+        _pajx = _pajx || 2;
+
+        if(!url){
+            return;
+        }
+
+        pageUrl = changeURLArg(url, '_pajx', _pajx);
+        pushUrl(url);
+
+        $.get(pageUrl,function (page) {
+
+            if (page.code) {
+                MsgBox.ERROR(page.msg,function (index) {
+                    layer.close(index);
+                    history.go(-1);
+                });
+
+            }else{
+                if (pageUrl.indexOf('_pajx=2')>-1) {
+                    //内容页面
+                    $('.content-wrapper').html(page);
+                }else{
+                    //左侧菜单+内容页面
+                    indexcon.html(page);
+
+                }
+
+            }
+
+        });
+    }
 });

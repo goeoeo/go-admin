@@ -127,9 +127,19 @@ func (c *BaseController) setBackendUser2Session(userId int) error {
 
 // 设置模板
 // 第一个参数模板，第二个参数为layout
-func (c *BaseController) setTpl(template ...string) {
+func (c *BaseController) display(template ...string) {
 	var tplName string
-	layout := "shared/layout_page.html"
+
+	//根据请求设置公用模板
+	var layout string
+	if c.IsAjax() {
+		layout = "shared/layout_ajax.html"
+	}else{
+		layout = "shared/layout_page.html"
+
+	}
+
+	//设置默认模板
 	switch {
 	case len(template) == 1:
 		tplName = template[0]

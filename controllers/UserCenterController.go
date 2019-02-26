@@ -29,10 +29,7 @@ func (c *UserCenterController) Profile() {
 	c.Data["hasAvatar"] = len(m.Avatar) > 0
 	utils.LogDebug(m.Avatar)
 	c.Data["m"] = m
-	c.setTpl()
-	c.LayoutSections = make(map[string]string)
-	c.LayoutSections["headcssjs"] = "usercenter/profile_headcssjs.html"
-	c.LayoutSections["footerjs"] = "usercenter/profile_footerjs.html"
+	c.display()
 }
 func (c *UserCenterController) BasicInfoSave() {
 	Id := c.curUser.Id
