@@ -29,22 +29,23 @@ http://blog.csdn.net/lhtzbj12/article/details/78847482
 本系统基于beego开发，默认使用mysql数据库，缓存redis 
 
 
-1. 安装golang环境（ 略）
+1.安装golang环境（ 略）
 
-2. 安装本系统
+2.安装本系统
 ```bash
 git clone https://github.com/phpdi/go_admin.git
 ```
-3.进入项目目录 执行 
-* 注释:这个程序批量修改文件的包名为当前项目目录的包名
+
+3.进入项目目录执行 注释:这个程序批量修改文件的包名为当前项目目录的包名
 ```bash
  ./rename -path=$(pwd) -oldProjectName=go_admin
 ```
-3. 将根目录下的sdrms.sql导入mysql
+4.将根目录下的sdrms.sql导入mysql
 
-4. 修改配置文件 conf/app.conf
- 需要配置mysql和redis的参数
-5. 运行
+5.修改配置文件 conf/app.conf
+* 需要配置mysql和redis的参数
+
+6.运行
 在 sdrms 目录使用beego官方提供的命令运行
 ```
 bee run
