@@ -3,7 +3,6 @@ package utils
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	_ "go_admin/models"
 	_ "github.com/go-sql-driver/mysql"
 
 )
