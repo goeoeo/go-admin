@@ -28,3 +28,5 @@ sdrms
 /logs/*.log
 /debug
 /sdrms
+
+go_admin

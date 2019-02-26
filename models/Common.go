@@ -1,6 +1,6 @@
 package models
 
-import "github.com/lhtzbj12/sdrms/enums"
+import "go_admin/enums"
 
 // JsonResult 用于返回ajax请求的基类
 type JsonResult struct {

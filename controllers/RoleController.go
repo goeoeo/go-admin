@@ -3,8 +3,8 @@ package controllers
 import (
 	"encoding/json"
 
-	"github.com/lhtzbj12/sdrms/enums"
-	"github.com/lhtzbj12/sdrms/models"
+	"go_admin/enums"
+	"go_admin/models"
 
 	"fmt"
 	"strconv"

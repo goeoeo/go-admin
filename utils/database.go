@@ -1,12 +1,11 @@
-package sysinit
+package utils
 
 import (
-	_ "github.com/lhtzbj12/sdrms/models"
-
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	//_ "github.com/mattn/go-sqlite3"
+	_ "go_admin/models"
 	_ "github.com/go-sql-driver/mysql"
+
 )
 
 //初始化数据连接
@@ -31,8 +30,11 @@ func InitDatabase() {
 		orm.RegisterDataBase(dbAlias, dbType, dbName)
 	case "mysql":
 		dbCharset := beego.AppConfig.String(dbType + "::db_charset")
-		orm.RegisterDataBase(dbAlias, dbType, dbUser+":"+dbPwd+"@tcp("+dbHost+":"+
+		err:=orm.RegisterDataBase(dbAlias, dbType, dbUser+":"+dbPwd+"@tcp("+dbHost+":"+
 			dbPort+")/"+dbName+"?charset="+dbCharset, 30)
+		if err != nil {
+			beego.Emergency("注册mysql失败")
+		}
 	}
 	//如果是开发模式，则显示命令信息
 	isDev := (beego.AppConfig.String("runmode") == "dev")

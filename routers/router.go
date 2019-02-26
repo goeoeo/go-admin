@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"github.com/lhtzbj12/sdrms/controllers"
+	"go_admin/controllers"
 
 	"github.com/astaxie/beego"
 )
