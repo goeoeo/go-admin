@@ -34,7 +34,7 @@ http://blog.csdn.net/lhtzbj12/article/details/78847482
 2.安装本系统 
 * ~/go/src/stock 是项目路径,修改成你自己的
 ```bash
-git clone https://github.com/phpdi/go_admin.git ~/go/src/stock
+git clone https://github.com/phpdi/go-admin.git ~/go/src/stock
 ```
 
 3.进入项目目录执行 注释:这个程序批量修改文件的包名为当前项目目录的包名
