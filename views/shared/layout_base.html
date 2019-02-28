@@ -9,12 +9,11 @@
     <title>{{.pageTitle}}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> 
-    {{template "shared/globalcss.html"}} 
-    {{.headcssjs}}
+    {{template "shared/css.html"}}
+    {{template "shared/js.html"}}
+
 </head>
 <body>
 {{.LayoutContent}}    
-{{template "shared/globaljs.html"}}  
-{{.footerjs}}
 </body>
 </html>

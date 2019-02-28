@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"go_admin/enums"
-	"go_admin/models"
+	"go-admin/enums"
+	"go-admin/models"
 
 	"github.com/astaxie/beego/orm"
 )

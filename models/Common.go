@@ -1,6 +1,6 @@
 package models
 
-import "go_admin/enums"
+import "go-admin/enums"
 
 // JsonResult 用于返回ajax请求的基类
 type JsonResult struct {

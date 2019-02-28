@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "go_admin/routers"
-	"go_admin/utils"
+	_ "go-admin/routers"
+	"go-admin/utils"
 	"github.com/astaxie/beego"
 )
 

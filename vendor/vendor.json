@@ -1,0 +1,118 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "A54wjjgmr/hWecjczfUpxRt5K9I=",
+			"path": "github.com/astaxie/beego",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "NrYHUw79p1fePvaOJjoDXB33W28=",
+			"path": "github.com/astaxie/beego/cache",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "hK/VJgNEUqBYuv9cOvBT3k2tGW8=",
+			"path": "github.com/astaxie/beego/cache/redis",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "JvDySyr+rfWQ9sp+ciwxxWywea0=",
+			"path": "github.com/astaxie/beego/config",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "FxigtCedghWIex8XXLjxosutR1w=",
+			"path": "github.com/astaxie/beego/context",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "iHY0XMPlj5EfCxMN4NEmvBgdhDM=",
+			"path": "github.com/astaxie/beego/context/param",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "XvYbK8rCWoCl/smN5OQO4a3zjW8=",
+			"path": "github.com/astaxie/beego/grace",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "OksAzF6VvpfTlte99lpVNV+iSnY=",
+			"path": "github.com/astaxie/beego/logs",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "Fncd0gmJJMb+sFY/BGePJ3YeDSA=",
+			"path": "github.com/astaxie/beego/orm",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "ayYf20efbB+MgLzIoZYEVYWw9pk=",
+			"path": "github.com/astaxie/beego/session",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "UGYM5ci8rhhkur7NqejqItZRHBY=",
+			"path": "github.com/astaxie/beego/toolbox",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "W7HBzu7HlF18vCfNPgax7xvHXB0=",
+			"path": "github.com/astaxie/beego/utils",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "XT0bw8+pmoObI9jEq7zcPfLGh9g=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "972a708cf97995463843c08c8585b26997daf0e1",
+			"revisionTime": "2019-02-17T07:26:58Z"
+		},
+		{
+			"checksumSHA1": "ym2VOnOPl3tJJdtmPtirwpHcYVM=",
+			"path": "github.com/gomodule/redigo/redis",
+			"revision": "b47395aa17662ff86cb5c52f3bf669bf842ec27a",
+			"revisionTime": "2019-02-26T17:44:33Z"
+		},
+		{
+			"checksumSHA1": "8zEXCBTpyOvsoOEPmLe8tTZvkXI=",
+			"path": "github.com/mattn/go-sqlite3",
+			"revision": "ad30583d8387ce8118f8605eaeb3b4f7b4ae0ee1",
+			"revisionTime": "2019-02-17T17:40:29Z"
+		},
+		{
+			"checksumSHA1": "J6lNRPdrYhKft6S8x33K9brxyhE=",
+			"origin": "github.com/astaxie/beego/vendor/golang.org/x/crypto/acme",
+			"path": "golang.org/x/crypto/acme",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "EFjIi/zCZ1Cte0MQtyxGCTgSzk8=",
+			"origin": "github.com/astaxie/beego/vendor/golang.org/x/crypto/acme/autocert",
+			"path": "golang.org/x/crypto/acme/autocert",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		},
+		{
+			"checksumSHA1": "ZSWoOPUNRr5+3dhkLK3C4cZAQPk=",
+			"origin": "github.com/astaxie/beego/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "422e8285b566c21bd8b01b30f52e2aafbad1c4fa",
+			"revisionTime": "2019-02-26T08:31:40Z"
+		}
+	],
+	"rootPath": "go-admin"
+}

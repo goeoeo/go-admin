@@ -3,9 +3,9 @@ package controllers
 import (
 	"strings"
 
-	"go_admin/enums"
-	"go_admin/models"
-	"go_admin/utils"
+	"go-admin/enums"
+	"go-admin/models"
+	"go-admin/utils"
 
 	"github.com/astaxie/beego/orm"
 )

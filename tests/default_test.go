@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"testing"
 
-	_ "go_admin/routers"
+	_ "go-admin/routers"
 
 	"github.com/astaxie/beego"
 	. "github.com/smartystreets/goconvey/convey"

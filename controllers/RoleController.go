@@ -3,8 +3,8 @@ package controllers
 import (
 	"encoding/json"
 
-	"go_admin/enums"
-	"go_admin/models"
+	"go-admin/enums"
+	"go-admin/models"
 
 	"fmt"
 	"strconv"

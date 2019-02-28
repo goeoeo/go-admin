@@ -3,7 +3,7 @@ package models
 import (
 	"fmt"
 
-	"go_admin/utils"
+	"go-admin/utils"
 
 	"github.com/astaxie/beego/orm"
 )

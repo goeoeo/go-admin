@@ -29,4 +29,9 @@ sdrms
 /debug
 /sdrms
 
+/vendor/*
+!/vendor/vendor.json
+
 go_admin
+go-admin
+go_build_go_admin

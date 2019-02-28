@@ -9,9 +9,8 @@
     <title>{{.pageTitle}}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"> 
-    {{template "shared/globalcss.html"}} 
-    {{.headcssjs}}
-    {{template "shared/globaljs.html"}}
+    {{template "shared/css.html"}}
+    {{template "shared/js.html"}}
 
 </head>
 
@@ -220,7 +219,6 @@
            });
         });
     </script>
-    {{.footerjs}}
 </body>
 
 </html>
